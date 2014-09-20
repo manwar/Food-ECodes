@@ -1,0 +1,37 @@
+Revision history for Food-ECodes
+
+0.08  Tue Aug 09 15:44:11 2011
+      - Made Readonly v1.03 as minimum requirement.
+      - Prepared the distribution using the Module::Signature v0.68.
+
+0.07  Wed May 25 10:21:00 2011
+      - Added E441 to the list of Non-Veg ECode [https://rt.cpan.org/Ticket/Display.html?id=68455].
+
+0.06  Tue Apr 26 10:07:00 2011
+      - Added method is_vegetarian() as suggested by Sawyer.
+      - Added test case for method is_vegetarian().
+
+0.05  Thu Apr 21 18:36:23 2011
+      - Renamed title "SYNOPSIS" to "DESCRIPTION".
+      - Minor cosmetics changes.
+
+0.04  Mon Apr 11 13:49:55 2011
+      - Fixed the typo in the pod for method get_status().
+      - Fixed the typo in the pod for method get_name().
+      - Fixed the typo in the pod for method get_purpose().
+      - Fixed the syntax error in the example pod for method is_valid().
+      - Fixed the syntax error in the example pod for method is_eu_approved().
+      - Fixed the syntax error in the example pod for method is_us_approved().
+
+0.03  Mon Apr 11 12:33:18 2011
+      - Added remaining ECodes from 1000 upto 1600.
+      - Added method get_status().
+      - Updated unit test 01-unit-test.t for new method get_status().
+
+0.02  Fri Apr 08 16:42:22 2011
+      - Fixed the typo in the pod for method is_valid().
+      - Fixed the typo in the pod for method is_eu_approved().
+      - Fixed the typo in the pod for method is_us_approved().
+
+0.01  Fri Apr 08 11:00:00 2011
+      - First version released.

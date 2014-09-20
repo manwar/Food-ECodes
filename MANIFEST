@@ -1,0 +1,11 @@
+Changes
+MANIFEST
+MANIFEST.SKIP
+SIGNATURE
+Makefile.PL
+README
+lib/Food/ECodes.pm
+t/00-load.t
+t/01-unit-test.t
+t/manifest.t
+t/pod.t
