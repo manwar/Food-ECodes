@@ -1,10 +1,10 @@
-package Food::ECodes;
+package Food::ECodes::Additive;
 
 $Food::ECodes::VERSION = '0.09';
 
 =head1 NAME
 
-Food::ECodes - Interface to Food Additive ECodes.
+Food::ECodes::Additive - Placeholder for Food Additive.
 
 =head1 VERSION
 
@@ -13,56 +13,46 @@ Version 0.09
 =cut
 
 use 5.006;
-use XML::Simple;
 use Data::Dumper;
-use File::Share ':all';
-use Food::ECodes::Additive;
 
 use Moo;
 use namespace::clean;
 
-has 'additives' => (is => 'ro');
+has 'id'          => (is => 'ro');
+has 'name'        => (is => 'ro');
+has 'status'      => (is => 'ro');
+has 'eu_approved' => (is => 'ro');
+has 'us_approved' => (is => 'ro');
+has 'vegetarian'  => (is => 'ro');
 
-sub BUILDARGS {
-    my ($class, $args) = @_;
-
-    die "ERROR: No parameters required for constructor." if defined $args;
-
-    my $xml       = dist_file('Food-ECodes', 'ecodes.xml');
-    my $ecode     = XMLin($xml, ForceArray => 1, KeyAttr => [ 'ecode' ]);
-    my $additives = {};
-
-    foreach my $_ecode (@{$ecode->{ecode}}) {
-        $additives->{uc($_ecode->{id})} = Food::ECodes::Additive->new($_ecode);
-    }
-
-    return { additives => $additives };
-};
-
-=head1 METHODS
-
-=head2 search()
-
-Returns  object  of  type L<Food::ECodes::Additive> on success, which can be then
-further queried.
+=head1 SYNOPSIS
 
     use strict; use warnings;
     use Food::ECodes;
 
     my $ecode    = Food::ECodes->new;
     my $additive = $ecode->search('E100');
-    print "Name: ", $additive->name, "\n";
 
-=cut
+    print "Id         : ", $additive->id,          "\n";
+    print "Name       : ", $additive->name,        "\n";
+    print "Status     : ", $additive->status,      "\n";
+    print "EU Approved: ", $additive->eu_approved, "\n";
+    print "US Approved: ", $additive->us_approved, "\n";
+    print "Vegetarian : ", $additive->vegetarian,  "\n";
 
-sub search {
-    my ($self, $code) = @_;
+=head1 METHODS
 
-    die "ERROR: Missing parameter 'ecode'."      unless defined $code;
-    die "ERROR: Invalid ecode '$code' received." unless (exists $self->{additives}->{uc($code)});
+=head2 id()
 
-    return $self->{additives}->{$code};
-}
+=head2 name()
+
+=head2 status()
+
+=head2 eu_approved()
+
+=head2 us_approved()
+
+=head2 vegetarian()
 
 =head1 AUTHOR
 
@@ -83,7 +73,7 @@ bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Food::ECodes
+    perldoc Food::ECodes::Additive
 
 You can also look for information at:
 
@@ -147,4 +137,4 @@ OF THE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of Food::ECodes
+1; # End of Food::ECodes::Additive

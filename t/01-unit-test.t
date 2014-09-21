@@ -1,30 +1,15 @@
-﻿#!perl
+#!perl
 
 use strict;use warnings;
-use Test::More tests => 11;
-
+use Test::More tests => 3;
 use Food::ECodes;
 
-my $food = Food::ECodes->new();
+eval { Food::ECodes->new('x') };
+like($@, qr/ERROR: No parameters required for constructor/);
 
-is($food->get_name('E100'), 'Curcumin, turmeric');
+my $ecode = Food::ECodes->new;
+eval { $ecode->search; };
+like($@, qr/ERROR: Missing parameter 'ecode'/);
 
-is($food->get_status('E100'), 'HALAL');
-
-is($food->get_status('E120'), 'HARAM');
-
-is($food->get_status('E111'), 'SUSPECTED');
-
-is($food->get_purpose('E100'), 'Food colouring (yellow-orange)');
-
-is($food->is_eu_approved('E106'), 0);
-
-is($food->is_us_approved('E100'), 1);
-
-is($food->is_valid('E106'), 1);
-
-is($food->is_valid('E99'), 0);
-
-is($food->is_vegetarian('E100'), 1);
-
-is($food->is_vegetarian('E120'), 0);
+eval { $ecode->search('x'); };
+like($@, qr/ERROR: Invalid ecode 'x' received/);

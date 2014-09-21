@@ -5,6 +5,8 @@ SIGNATURE
 Makefile.PL
 README
 lib/Food/ECodes.pm
+lib/Food/ECodes/Additive.pm
+share/ecodes.xml
 t/00-load.t
 t/01-unit-test.t
 t/manifest.t

@@ -1,5 +1,12 @@
 Revision history for Food-ECodes
 
+0.09  Sun Sep 21 01:51:05 2014
+      - Re-structured the code using 'Moo'.
+      - Added placeholder for 'Additive'.
+      - Updated the interface of Food::ECodes completely.
+      - Stored the ecodes definition in XML file, added to the distribution.
+      - Removed dependency on 'Readonly' and 'Carp'.
+
 0.08  Tue Aug 09 15:44:11 2011
       - Made Readonly v1.03 as minimum requirement.
       - Prepared the distribution using the Module::Signature v0.68.
