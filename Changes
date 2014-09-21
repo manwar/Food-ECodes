@@ -1,5 +1,8 @@
 Revision history for Food-ECodes
 
+0.10  Sun Sep 21 02:21:34 2014
+      - Added method purpose() to the Food::ECodes::Additive package.
+
 0.09  Sun Sep 21 01:51:05 2014
       - Re-structured the code using 'Moo'.
       - Added placeholder for 'Additive'.

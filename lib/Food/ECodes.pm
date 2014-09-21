@@ -1,6 +1,6 @@
 package Food::ECodes;
 
-$Food::ECodes::VERSION = '0.09';
+$Food::ECodes::VERSION = '0.10';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Food::ECodes - Interface to Food Additive ECodes.
 
 =head1 VERSION
 
-Version 0.09
+Version 0.10
 
 =cut
 

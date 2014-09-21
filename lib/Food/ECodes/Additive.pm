@@ -1,6 +1,6 @@
 package Food::ECodes::Additive;
 
-$Food::ECodes::VERSION = '0.09';
+$Food::ECodes::VERSION = '0.10';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Food::ECodes::Additive - Placeholder for Food Additive.
 
 =head1 VERSION
 
-Version 0.09
+Version 0.10
 
 =cut
 
@@ -21,6 +21,7 @@ use namespace::clean;
 has 'id'          => (is => 'ro');
 has 'name'        => (is => 'ro');
 has 'status'      => (is => 'ro');
+has 'purpose'     => (is => 'ro');
 has 'eu_approved' => (is => 'ro');
 has 'us_approved' => (is => 'ro');
 has 'vegetarian'  => (is => 'ro');
@@ -36,6 +37,7 @@ has 'vegetarian'  => (is => 'ro');
     print "Id         : ", $additive->id,          "\n";
     print "Name       : ", $additive->name,        "\n";
     print "Status     : ", $additive->status,      "\n";
+    print "Purpose    : ", $additive->purpose,     "\n";
     print "EU Approved: ", $additive->eu_approved, "\n";
     print "US Approved: ", $additive->us_approved, "\n";
     print "Vegetarian : ", $additive->vegetarian,  "\n";
@@ -47,6 +49,8 @@ has 'vegetarian'  => (is => 'ro');
 =head2 name()
 
 =head2 status()
+
+=head2 purpose()
 
 =head2 eu_approved()
 
