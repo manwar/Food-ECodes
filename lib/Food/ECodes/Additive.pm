@@ -1,6 +1,6 @@
 package Food::ECodes::Additive;
 
-$Food::ECodes::VERSION = '0.10';
+$Food::ECodes::VERSION = '0.11';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Food::ECodes::Additive - Placeholder for Food Additive.
 
 =head1 VERSION
 
-Version 0.10
+Version 0.11
 
 =cut
 
@@ -103,7 +103,7 @@ L<http://search.cpan.org/dist/Food-ECodes/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2011 - 2014 Mohammad S Anwar.
+Copyright (C) 2011 - 2015 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full

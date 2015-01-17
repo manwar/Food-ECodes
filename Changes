@@ -1,5 +1,10 @@
 Revision history for Food-ECodes
 
+0.11  Sat Jan 17 00:40:00 2015
+      - Removed SIGNATURE file.
+      - Updated MANIFEST.SKIP file to ignore folder 'eumm/'.
+      - Updated Copyright year information.
+
 0.10  Sun Sep 21 02:21:34 2014
       - Added method purpose() to the Food::ECodes::Additive package.
 
