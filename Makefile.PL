@@ -18,14 +18,14 @@ WriteMakefile(
         'ExtUtils::MakeMaker'     => 0,
         'File::ShareDir::Install' => 0,
     },
-    BUILD_REQUIRES => {
+    BUILD_REQUIRES   => {
         'Test::More' => 0,
     },
     PREREQ_PM => {
         'Moo' => 0,
         'namespace::clean' => 0,
-        'XML::Simple'      => 0,
-        'File::Share'      => 0,
+        'XML::Simple'      => '2.20',
+        'File::Share'      => '0.25',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Food-ECodes-*' },
