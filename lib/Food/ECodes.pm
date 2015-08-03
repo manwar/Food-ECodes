@@ -1,6 +1,6 @@
 package Food::ECodes;
 
-$Food::ECodes::VERSION = '0.12';
+$Food::ECodes::VERSION = '0.13';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Food::ECodes - Interface to Food Additive ECodes.
 
 =head1 VERSION
 
-Version 0.12
+Version 0.13
 
 =cut
 
@@ -39,12 +39,11 @@ sub BUILDARGS {
     return { additives => $additives };
 };
 
-=head1 METHODS
+=head1 DESCRIPTION
 
-=head2 search()
+It provides simple interface to the Ecodes library.
 
-Returns  object  of  type L<Food::ECodes::Additive> on success, which can be then
-further queried.
+=head1 SYNOPSIS
 
     use strict; use warnings;
     use Food::ECodes;
@@ -52,6 +51,13 @@ further queried.
     my $ecode    = Food::ECodes->new;
     my $additive = $ecode->search('E100');
     print "Name: ", $additive->name, "\n";
+
+=head1 METHODS
+
+=head2 search()
+
+Returns  object  of  type L<Food::ECodes::Additive> on success, which can be then
+further queried.
 
 =cut
 

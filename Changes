@@ -1,5 +1,8 @@
 Revision history for Food-ECodes
 
+0.13  Mon Aug 03 12:00:00 2015
+      - Added section "DESCRIPTION" and "SYNOPSIS" to the pod document.
+
 0.12  Tue Jun 02 11:40:00 2015
       - Added LICENSE file.
 
