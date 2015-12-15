@@ -1,5 +1,8 @@
 Revision history for Food-ECodes
 
+0.14  Tue Dec 15 10:40:00 2015
+      - Added key 'provides' to the Makefile.PL script.
+
 0.13  Mon Aug 03 12:00:00 2015
       - Added section "DESCRIPTION" and "SYNOPSIS" to the pod document.
 
