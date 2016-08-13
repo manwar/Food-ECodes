@@ -1,6 +1,6 @@
 package Food::ECodes;
 
-$Food::ECodes::VERSION = '0.14';
+$Food::ECodes::VERSION = '0.15';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Food::ECodes - Interface to Food Additive ECodes.
 
 =head1 VERSION
 
-Version 0.14
+Version 0.15
 
 =cut
 
@@ -76,7 +76,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/Food-ECodes>
+L<https://github.com/manwar/Food-ECodes>
 
 =head1 BUGS
 
@@ -115,7 +115,7 @@ L<http://search.cpan.org/dist/Food-ECodes/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2011 - 2015 Mohammad S Anwar.
+Copyright (C) 2011 - 2016 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full
