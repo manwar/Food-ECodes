@@ -1,5 +1,8 @@
 Revision history for Food::ECodes
 
+0.16  Wed Sep 07 09:15:00 2016
+      - Added test scripts (t/meta-json.t and t/meta-yml.t).
+
 0.15  Sat Aug 13 15:55:00 2016
       - Updated Copyright year information.
       - Tidied up github repository url.
