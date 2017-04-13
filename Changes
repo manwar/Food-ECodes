@@ -1,5 +1,10 @@
 Revision history for Food::ECodes
 
+0.17  Thu Apr 13 18:45:00 2017
+      - Added $AUTHORITY to each packages.
+      - Enabled strict/warnings checks in the t/00-load.t script.
+      - Added load check for the package Food::ECodes::Additive.
+
 0.16  Wed Sep 07 09:15:00 2016
       - Added test scripts (t/meta-json.t and t/meta-yml.t).
 

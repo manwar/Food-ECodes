@@ -1,6 +1,7 @@
 package Food::ECodes::Additive;
 
-$Food::ECodes::Additive::VERSION = '0.16';
+$Food::ECodes::Additive::VERSION   = '0.17';
+$Food::ECodes::Additive::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
 
@@ -8,7 +9,7 @@ Food::ECodes::Additive - Placeholder for Food Additive.
 
 =head1 VERSION
 
-Version 0.16
+Version 0.17
 
 =cut
 

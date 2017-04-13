@@ -1,6 +1,7 @@
 package Food::ECodes;
 
-$Food::ECodes::VERSION = '0.16';
+$Food::ECodes::VERSION   = '0.17';
+$Food::ECodes::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
 
@@ -8,7 +9,7 @@ Food::ECodes - Interface to Food Additive ECodes.
 
 =head1 VERSION
 
-Version 0.16
+Version 0.17
 
 =cut
 
